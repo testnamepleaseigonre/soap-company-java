@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>lt.viko.eif.vsubotkovski</groupId>
+    <artifactId>soap-company-java</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        
+        <!-- ... -->
+        <jakarta.xml.ws.version>2.3.3</jakarta.xml.ws.version>
+        <com.sun.xml.ws.version>2.3.3</com.sun.xml.ws.version>
+    </properties>
+    
+     <dependencies>
+        
+        <!-- API -->
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>${jakarta.xml.ws.version}</version>
+        </dependency>
+        
+        <!-- Runtime -->
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <version>${com.sun.xml.ws.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>lt.viko.eif.vsubotkovski</groupId>
+            <artifactId>company-to-xml</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+        
+    </dependencies>
+    
+</project>
