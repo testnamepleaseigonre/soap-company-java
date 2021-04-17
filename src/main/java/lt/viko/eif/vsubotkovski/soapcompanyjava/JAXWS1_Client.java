@@ -11,7 +11,8 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
 /**
- *
+ * Main method, implementation of service client side.
+ * 
  * @author valde
  */
 public class JAXWS1_Client {
@@ -21,6 +22,5 @@ public class JAXWS1_Client {
         "CompanyServiceImplService");
         Service service = Service.create(url, qname);
         CompanyService eif = service.getPort(CompanyService.class);
-        System.out.println(eif.getAllCompany());
     }
 }

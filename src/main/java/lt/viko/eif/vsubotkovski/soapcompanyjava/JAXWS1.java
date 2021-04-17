@@ -8,7 +8,8 @@ package lt.viko.eif.vsubotkovski.soapcompanyjava;
 import javax.xml.ws.Endpoint;
 
 /**
- *
+ * Represents main class with endpoint of service.
+ * 
  * @author valde
  */
 public class JAXWS1 {
